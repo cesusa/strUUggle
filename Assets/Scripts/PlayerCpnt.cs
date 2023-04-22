@@ -1,22 +1,34 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCpnt : MonoBehaviour
 {
-
     public bool isAttacking;
     private Animator animator;
-    public int health;
+    [SerializeField] private int _health;
 
-    // Start is called before the first frame update
+    public int Health
+    {
+        get => _health;
+        set
+        {
+            if (_health == value) return;
+
+            _health = value;
+            OnPlayerHealthChange?.Invoke(_health, value);
+        }
+    }
+
+    public Action<int, int> OnPlayerHealthChange;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         isAttacking = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButton(0))
@@ -58,13 +70,13 @@ public class PlayerCpnt : MonoBehaviour
             }
         }
     }*/
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
         // decrease health
-        health--;
+        Health -= damage;
 
         // if health is zero or less, die
-        if (health <= 0)
+        if (Health <= 0)
         {
             Die();
         }
