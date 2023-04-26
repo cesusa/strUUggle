@@ -34,6 +34,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50b4cb44f364148887d00e9718b4e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackRange: 0.75
 --- !u!1101 &-7598922822847810436
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

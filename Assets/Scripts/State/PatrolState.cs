@@ -18,13 +18,10 @@ namespace State
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             agent = animator.GetComponent<NavMeshAgent>();
+            agent.speed = animator.GetComponent<EnemyAttributes>().PatrollingSpeed;
             timer = 0;
 
-            GameObject go = GameObject.FindGameObjectWithTag("Waypoints");
-            foreach (Transform t in go.transform)
-            {
-                allWaypoints.Add(t);
-            }
+            allWaypoints = new List<Transform>(animator.GetComponent<EnemyWaypoints>().Waypoints);
 
             waypoints = new List<Transform>(allWaypoints);
             var waypoint = waypoints[Random.Range(0, waypoints.Count)];

@@ -4,10 +4,12 @@ namespace State
 {
     public class AttackState: StateMachineBehaviour
     {
-        [SerializeField] private int _damage;
+        private int _damage;
         
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
+            _damage = animator.GetComponent<EnemyAttributes>().Damage;
+            
             var player = GameObject.FindWithTag("Player");
             
             animator.transform.LookAt(player.transform);

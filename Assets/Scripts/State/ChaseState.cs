@@ -15,6 +15,7 @@ namespace State
         {
             _playerTransform = GameObject.FindWithTag("Player").transform;
             _agent = animator.GetComponent<NavMeshAgent>();
+            _agent.speed = animator.GetComponent<EnemyAttributes>().ChasingSpeed;
         }
 
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
