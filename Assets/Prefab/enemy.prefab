@@ -885,8 +885,10 @@ GameObject:
   - component: {fileID: 8431147545404006178}
   - component: {fileID: 2624439337637232981}
   - component: {fileID: 2624439337637232978}
+  - component: {fileID: 811012890}
+  - component: {fileID: 811012891}
   m_Layer: 0
-  m_Name: enemydeneme
+  m_Name: enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,9 +948,9 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 1.5
-  m_Acceleration: 5
+  m_Acceleration: 100
   avoidancePriority: 50
-  m_AngularSpeed: 80
+  m_AngularSpeed: 400
   m_StoppingDistance: 0.25
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -971,6 +973,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HeaderMessage: HelloDarknessMyOldFriend
   HeaderText: {fileID: 2624439337258872030}
+--- !u!114 &811012890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2930304580753022946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ceba672ecc4a46b701dbbb1913cfd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &811012891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2930304580753022946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa555b4effa4aa2a8ccda4908dcfde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PatrollingSpeed: 1.5
+  ChasingSpeed: 2.5
+  Damage: 1
 --- !u!1 &3099175989620733953
 GameObject:
   m_ObjectHideFlags: 0
