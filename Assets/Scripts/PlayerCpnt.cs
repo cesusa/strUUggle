@@ -40,7 +40,7 @@ public class PlayerCpnt : MonoBehaviour
                 
             }
         }
-        if (Input.GetMouseButton(1))
+       /* if (Input.GetMouseButton(1))
         {
             if (!isAttacking)
             {
@@ -48,7 +48,7 @@ public class PlayerCpnt : MonoBehaviour
                 animator.SetTrigger("Kick");
                 
             }
-        }
+        }*/
     }
     public void StartAttacking()
     {
