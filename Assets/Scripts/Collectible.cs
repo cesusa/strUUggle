@@ -6,8 +6,7 @@ public class Collectible : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-
-        CollectibleController.coinCount += 1;
+        other.gameObject.GetComponent<PlayerPanicAttack>().Happiness++;
         Destroy(gameObject);
     }
 }
