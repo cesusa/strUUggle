@@ -35,7 +35,7 @@ public class PlayerCpnt : MonoBehaviour
         {
             if (!isAttacking)
             {
-                
+                isAttacking = true;
                 animator.SetTrigger("Punch1");
                 
             }

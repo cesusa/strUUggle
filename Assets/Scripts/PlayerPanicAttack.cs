@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class PlayerPanicAttack: MonoBehaviour
 {
+    public GameObject PanicAttackPressFContent;
     public Image PanicAttackEffectImage;
     public Image StressImage;
     public Image HappinessImage;
@@ -95,6 +96,7 @@ public class PlayerPanicAttack: MonoBehaviour
         _panicAttackEffectImageFadeSequence = null;
         PanicAttackEffectImage.DOFade(0, 0);
         PanicAttackEffectImage.gameObject.SetActive(false);
+        PanicAttackPressFContent.SetActive(false);
         AudioPlayer.Stop();
 
         _happinessSequence?.Kill();
@@ -121,6 +123,7 @@ public class PlayerPanicAttack: MonoBehaviour
     {
         IsPanicAttacking = true;
         PanicAttackEffectImage.gameObject.SetActive(true);
+        PanicAttackPressFContent.SetActive(true);
 
         _panicAttackEffectImageFadeSequence = DOTween.Sequence();
         _panicAttackEffectImageFadeSequence.Append(PanicAttackEffectImage.DOFade(0.2f, PanicAttackRedEffectDuration));
@@ -128,7 +131,7 @@ public class PlayerPanicAttack: MonoBehaviour
         _panicAttackEffectImageFadeSequence.SetLoops(-1);
         _panicAttackEffectImageFadeSequence.Play();
 
-        _happinessSequence = DOTween.Sequence().AppendInterval(HappinessReductionInterval).OnStepComplete(() => Happiness--).SetLoops(-1);
+        // _happinessSequence = DOTween.Sequence().AppendInterval(HappinessReductionInterval).OnStepComplete(() => Happiness--).SetLoops(-1);
         _stressSequence = DOTween.Sequence().AppendInterval(StressIncreaseInterval).OnStepComplete(() => Stress++).SetLoops(-1);
 
         AudioPlayer.clip = SirenAudio;
