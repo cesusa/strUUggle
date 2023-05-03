@@ -9,6 +9,8 @@ public class PlayerCpnt : MonoBehaviour
     private Animator animator;
     [SerializeField] private int _health;
 
+    public HealthBar healthbar;
+
     public int Health
     {
         get => _health;
@@ -27,6 +29,7 @@ public class PlayerCpnt : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         isAttacking = false;
+        healthbar.SetMaxHealth(Health);
     }
 
     void Update()
@@ -74,6 +77,7 @@ public class PlayerCpnt : MonoBehaviour
     {
         // decrease health
         Health -= damage;
+        healthbar.SetHealth(Health);
 
         // if health is zero or less, die
         if (Health <= 0)
