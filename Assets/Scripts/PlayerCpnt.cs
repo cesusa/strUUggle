@@ -52,6 +52,19 @@ public class PlayerCpnt : MonoBehaviour
                 
             }
         }*/
+
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Health")
+        {
+            Health += 5;
+           
+            healthbar.SetHealth(Health);
+        }
+        
+        
     }
     public void StartAttacking()
     {
