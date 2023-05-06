@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CollectibleHealth : MonoBehaviour
 {
-    public HealthBar healthbar;
+    //public HealthBar healthbar;
 
     private void OnTriggerEnter(Collider other)
     {
