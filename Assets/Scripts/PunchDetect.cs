@@ -37,7 +37,7 @@ public class PunchDetect : MonoBehaviour
         {
             
             UnityEngine.Debug.Log("Vurdu");
-            GameObject.Find("Enemy").GetComponent<EnemyHealth>().TakeDamage(5);
+            GameObject.FindWithTag("Enemy").GetComponent<EnemyHealth>().TakeDamage(5);
         }
 
         

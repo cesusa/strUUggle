@@ -5,28 +5,33 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public int FullHealth;
-    int currentHelath;
+    //int currentHelath;
      
     
     // Start is called before the first frame update
     void Start()
     {
-        currentHelath = FullHealth;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (FullHealth <= 0)
+        {
+            gameObject.SetActive(false);
+        }
     }
     public void TakeDamage(int damage)
     {
-        currentHelath -= damage;
-        Debug.Log(currentHelath);
-        if( currentHelath <=0)
+        FullHealth -= damage;
+        Debug.Log(FullHealth);
+        /*if( currentHelath <=0)
         {
+            gameObject.SetActive(false);
             Destroy(gameObject);
+            Debug.Log("oldu");
             
-        }
+        }*/
     }
 }
