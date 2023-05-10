@@ -26,12 +26,9 @@ public class EnemyHealth : MonoBehaviour
     {
         FullHealth -= damage;
         Debug.Log(FullHealth);
-        /*if( currentHelath <=0)
+        if(FullHealth <=0)
         {
-            gameObject.SetActive(false);
             Destroy(gameObject);
-            Debug.Log("oldu");
-            
-        }*/
+        }
     }
 }

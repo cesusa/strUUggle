@@ -31,17 +31,11 @@ public class PunchDetect : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-
-
         if (other.tag == "Enemy"  && PunchAnim == true )
         {
-            
             UnityEngine.Debug.Log("Vurdu");
-            GameObject.FindWithTag("Enemy").GetComponent<EnemyHealth>().TakeDamage(5);
+            other.GetComponent<EnemyHealth>().TakeDamage(5);
         }
-
-        
-        
     }
     private void OnTriggerStay(Collider other)
     {
