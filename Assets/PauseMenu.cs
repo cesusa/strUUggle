@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    [SerializeField] private StarterAssetsInputs _starterAssetsInputs;
 
     // Update is called once per frame
     void Update()
@@ -26,6 +28,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        _starterAssetsInputs.cursorLocked = true;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -33,10 +36,10 @@ public class PauseMenu : MonoBehaviour
     
     void Pause()
     {
+        _starterAssetsInputs.cursorLocked = false;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
-            
     }
     public void QuitGame()
     {
