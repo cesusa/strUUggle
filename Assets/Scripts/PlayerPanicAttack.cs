@@ -2,6 +2,7 @@
 using System.Collections;
 using DG.Tweening;
 using TMPro;
+using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -38,9 +39,31 @@ public class PlayerPanicAttack: MonoBehaviour
 
     public event Action<bool> OnPanicAttackChanged;
 
+    private IDisposable _stressIntervalDisposable;
+
     private void Start()
     {
         StartCoroutine(StartPanicAttack());
+
+        GetComponent<PlayerCpnt>()
+            .ObserveEveryValueChanged(player => player.isAttacking)
+            .Subscribe(isAttacking =>
+            {
+                if (!isAttacking)
+                {
+                    _stressIntervalDisposable = Observable
+                        .Interval(TimeSpan.FromSeconds(1))
+                        .Subscribe(_ =>
+                        {
+                            Stress -= 2;
+                        });
+                }
+                else
+                {
+                    Stress++;
+                    _stressIntervalDisposable?.Dispose();
+                }
+            });
     }
 
     public void Update()
@@ -183,9 +206,7 @@ public class PlayerPanicAttack: MonoBehaviour
         get => _stress;
         set
         {
-            Debug.Log($"stress before: {value}");
             _stress = Mathf.Clamp(value, 0, MaxStress);
-            Debug.Log($"stress after: {_stress}");
 
             StressImage.DOFillAmount((float)_stress / MaxStress, 0.5f);
         }
