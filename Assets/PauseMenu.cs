@@ -29,6 +29,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         _starterAssetsInputs.cursorLocked = true;
+        _starterAssetsInputs.cursorInputForLook = true;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -37,6 +38,7 @@ public class PauseMenu : MonoBehaviour
     void Pause()
     {
         _starterAssetsInputs.cursorLocked = false;
+        _starterAssetsInputs.cursorInputForLook = false;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;

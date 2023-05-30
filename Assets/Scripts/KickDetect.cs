@@ -1,40 +1,39 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PunchDetect : MonoBehaviour
+public class KickDetect : MonoBehaviour
 {
-    bool isPunching;
-    bool PunchAnim;
+    bool KickAnim;
     
     void Start()
     {
-        PunchAnim = false;
+        KickAnim = false;
     }
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(1))
         {
-            PunchAnim = true;
+            KickAnim = true;
         }
     }
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy"  && PunchAnim == true )
+        if (other.tag == "Enemy"  && KickAnim == true )
         {
-            UnityEngine.Debug.Log("Vurdu");
+            Debug.Log("Kick!");
             other.GetComponent<EnemyHealth>().TakeDamage(5);
         }
     }
     
     private void OnTriggerStay(Collider other)
     {
-        PunchAnim = false;
+        KickAnim = false;
     }
     
     private void OnTriggerExit(Collider other)
     {
-        PunchAnim = false;
+        KickAnim = false;
     }
 
 
