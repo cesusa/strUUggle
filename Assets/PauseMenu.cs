@@ -41,6 +41,7 @@ public class PauseMenu : MonoBehaviour
     {
         _starterAssetsInputs.cursorLocked = false;
         _starterAssetsInputs.cursorInputForLook = false;
+        _starterAssetsInputs.look = Vector3.zero;
         Cursor.lockState = CursorLockMode.None;
 
         pauseMenuUI.SetActive(true);
