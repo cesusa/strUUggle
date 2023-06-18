@@ -11,6 +11,8 @@ public class PlayerCpnt : MonoBehaviour
 
     public HealthBar healthbar;
 
+    public bool IsEnabled = true;
+
     public int Health
     {
         get => _health;
@@ -33,6 +35,11 @@ public class PlayerCpnt : MonoBehaviour
 
     void Update()
     {
+        if (!IsEnabled)
+        {
+            return;
+        }
+        
         if (Input.GetMouseButton(0))
         {
             if (!isAttacking)
@@ -49,6 +56,17 @@ public class PlayerCpnt : MonoBehaviour
             }
         }
     }
+    
+    public void Enable()
+    {
+        IsEnabled = true;
+    }
+
+    public void Disable()
+    {
+        IsEnabled = false;
+    }
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Health")

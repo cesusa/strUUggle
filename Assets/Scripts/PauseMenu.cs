@@ -10,10 +10,12 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     [SerializeField] private StarterAssetsInputs _starterAssetsInputs;
 
+    public bool IsDisabled = false;
+
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) && !IsDisabled)
         {
             if(GameIsPaused)
             {
@@ -48,6 +50,26 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
+
+    public void Enable()
+    {
+        _starterAssetsInputs.cursorLocked = true;
+        _starterAssetsInputs.cursorInputForLook = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        
+        IsDisabled = false;
+    }
+
+    public void Disable()
+    {
+        _starterAssetsInputs.cursorLocked = false;
+        _starterAssetsInputs.cursorInputForLook = false;
+        _starterAssetsInputs.look = Vector3.zero;
+        Cursor.lockState = CursorLockMode.None;
+
+        IsDisabled = true;
+    }
+    
     public void QuitGame()
     {
         Application.Quit();

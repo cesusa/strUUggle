@@ -27,7 +27,7 @@ public class PlayerPanicAttack: MonoBehaviour
     public float StressIncreaseInterval = 1f;
 
     private float _cureRoutineYieldTime = 0.1f;
-    private int _happiness = 0;
+    private int _happiness = 30;
     private int _stress = 0;
     private bool _isPanicAttacking = false;
     private bool _isPlayerInCureArea = false;
@@ -64,6 +64,9 @@ public class PlayerPanicAttack: MonoBehaviour
                     _stressIntervalDisposable?.Dispose();
                 }
             });
+
+        
+        MaxHappiness = FindObjectsOfType<Collectible>().Length;
     }
 
     public void Update()
@@ -84,6 +87,16 @@ public class PlayerPanicAttack: MonoBehaviour
             Debug.Log($"Key Up ReleasePanicAttackKey");
             StopPanicAttackCure();
         }
+    }
+
+    public void Enable()
+    {
+        StartCoroutine(StartPanicAttack());
+    }
+
+    public void Disable()
+    {
+        StopAllCoroutines();
     }
 
     private IEnumerator StartPanicAttackCure()

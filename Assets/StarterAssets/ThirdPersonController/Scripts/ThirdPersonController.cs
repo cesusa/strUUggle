@@ -1,4 +1,5 @@
 ﻿ using UnityEngine;
+ using UnityEngine.Serialization;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -122,6 +123,8 @@ namespace StarterAssets
             }
         }
 
+        public bool IsMoveDisabled = false;
+
 
         private void Awake()
         {
@@ -213,6 +216,13 @@ namespace StarterAssets
 
         private void Move()
         {
+            if (IsMoveDisabled && Grounded)
+            {
+                _animator.SetBool(_animIDGrounded, true);
+                _animator.SetFloat("Speed", 0);
+                return;
+            }
+            
             // set target speed based on move speed, sprint speed and if sprint is pressed
             float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
