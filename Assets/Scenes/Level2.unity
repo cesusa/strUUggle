@@ -12748,6 +12748,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Info
       objectReference: {fileID: 0}
+    - target: {fileID: 1004748047327377491, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748047327377491, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748047327377491, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748047327377491, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748047382873120, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748048309369029, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 539.1193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748048309369029, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 683.1892
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748048309369029, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -370
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748048309369029, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748048596292009, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9be848473414ec478f6529432b64bf3, type: 3}
 --- !u!224 &574333393 stripped
@@ -14780,6 +14820,11 @@ PrefabInstance:
     - target: {fileID: 2585445316728423768, guid: 4b7e954aed1a5da4eab9e26ac5527df3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2624439337637232978, guid: 4b7e954aed1a5da4eab9e26ac5527df3, type: 3}
+      propertyPath: HeaderMessage
+      value: I've gained some weight lately, will they make fun of me if I say I'm
+        hungry?
       objectReference: {fileID: 0}
     - target: {fileID: 2930304580753022946, guid: 4b7e954aed1a5da4eab9e26ac5527df3, type: 3}
       propertyPath: m_Name
@@ -31470,6 +31515,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2624439337637232978, guid: 4b7e954aed1a5da4eab9e26ac5527df3, type: 3}
+      propertyPath: HeaderMessage
+      value: I'd better get a blood test while I'm here, and see a neurologist. I've
+        been having a headache lately, what if I have a tumor?
+      objectReference: {fileID: 0}
     - target: {fileID: 2930304580753022946, guid: 4b7e954aed1a5da4eab9e26ac5527df3, type: 3}
       propertyPath: m_Name
       value: enemy (3)
@@ -35718,7 +35768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2624439337637232978, guid: 4b7e954aed1a5da4eab9e26ac5527df3, type: 3}
       propertyPath: HeaderMessage
-      value: Did they like where I brought them?
+      value: I think they're tired of me.
       objectReference: {fileID: 0}
     - target: {fileID: 2930304580753022946, guid: 4b7e954aed1a5da4eab9e26ac5527df3, type: 3}
       propertyPath: m_Name

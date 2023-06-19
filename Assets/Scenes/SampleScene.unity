@@ -12928,7 +12928,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1484815186517215958, guid: a1b15d982f84b03468092fc4892ffa4c, type: 3}
       propertyPath: TutorialMessage
-      value: LET'S GET START!
+      value: Let me tell you without forgetting, you can find the meanings of the
+        ground colors in the fields, the list of tasks and enemies in the menu that
+        you will open by pressing the E key.LET'S GET START!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1b15d982f84b03468092fc4892ffa4c, type: 3}
