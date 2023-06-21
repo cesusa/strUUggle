@@ -27,7 +27,7 @@ public class PlayerPanicAttack: MonoBehaviour
     public float StressIncreaseInterval = 1f;
 
     private float _cureRoutineYieldTime = 0.1f;
-    private int _happiness = 30;
+    private int _happiness = 46;
     private int _stress = 0;
     private bool _isPanicAttacking = false;
     private bool _isPlayerInCureArea = false;

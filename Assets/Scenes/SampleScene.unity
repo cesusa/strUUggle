@@ -860,6 +860,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 39e9f3ac5ecc88541a70c1edac45cff8, type: 3}
   m_PrefabInstance: {fileID: 35613626}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &40602198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
+  m_PrefabInstance: {fileID: 724246626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &40602202
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40602198}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7683266647293136700, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
 --- !u!1 &45581433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,7 +1593,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MissionContent: {fileID: 1004748047537311887}
   MissionText: {fileID: 1004748047537311886}
-  Message: This is a test message for any mission.
+  Message: You are in a place where there is an obvious competition, albeit hidden,
+    and where you have been imposed from childhood to be at the top of this competition.
+    By the way, I know you know the answer to the question asked, but what if it's
+    wrong?
 --- !u!1 &76735893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,6 +2523,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7324705577624711914, guid: 9eb847ab97b24024588682c8601254cf, type: 3}
   m_PrefabInstance: {fileID: 132430943}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &134397310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
+  m_PrefabInstance: {fileID: 1164169757}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &135791279
 PrefabInstance:
@@ -5824,6 +5851,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 07b1e7025ece96544b59c76218131f2f, type: 3}
   m_PrefabInstance: {fileID: 250890560}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &256060848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 39e9f3ac5ecc88541a70c1edac45cff8, type: 3}
+  m_PrefabInstance: {fileID: 35613626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &256060851
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256060848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5319838960549624506, guid: 39e9f3ac5ecc88541a70c1edac45cff8, type: 3}
 --- !u!1 &256067989
 GameObject:
   m_ObjectHideFlags: 0
@@ -6653,7 +6699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Happiness:'
+  m_text: 'Happiness: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7606,6 +7652,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7324705577624711914, guid: 9eb847ab97b24024588682c8601254cf, type: 3}
   m_PrefabInstance: {fileID: 333102647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &339053540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
+  m_PrefabInstance: {fileID: 1975224585}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &339229156
 GameObject:
@@ -13058,6 +13109,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1b15d982f84b03468092fc4892ffa4c, type: 3}
+--- !u!1 &588105078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
+  m_PrefabInstance: {fileID: 1441661081}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &589113197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14292,6 +14348,11 @@ Transform:
   m_Father: {fileID: 1742861414}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &638639376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
+  m_PrefabInstance: {fileID: 807065586}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &640972897
 GameObject:
   m_ObjectHideFlags: 0
@@ -16392,6 +16453,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7324705577624711914, guid: 9eb847ab97b24024588682c8601254cf, type: 3}
   m_PrefabInstance: {fileID: 741514179}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &744935868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 39e9f3ac5ecc88541a70c1edac45cff8, type: 3}
+  m_PrefabInstance: {fileID: 964162010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &744935872
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744935868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5319838960549624506, guid: 39e9f3ac5ecc88541a70c1edac45cff8, type: 3}
 --- !u!1001 &750782320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17604,6 +17684,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
   m_PrefabInstance: {fileID: 807065586}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &807065590
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638639376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7683266647293136700, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
 --- !u!1001 &810865267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18863,6 +18957,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 07b1e7025ece96544b59c76218131f2f, type: 3}
   m_PrefabInstance: {fileID: 901844494}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &908003852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
+  m_PrefabInstance: {fileID: 163489068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &908003855
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908003852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7683266647293136700, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
 --- !u!1 &911906206
 GameObject:
   m_ObjectHideFlags: 0
@@ -21922,6 +22035,25 @@ Transform:
   m_Father: {fileID: 1378147938}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1056536218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
+  m_PrefabInstance: {fileID: 351830878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1056536221
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056536218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7683266647293136700, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
 --- !u!1001 &1057975391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22451,7 +22583,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MissionContent: {fileID: 1004748047537311887}
   MissionText: {fileID: 1004748047537311886}
-  Message: This is a test message for any mission.
+  Message: Even in the simplest coffee shop or bar, you feel as if the waiter in
+    front of you is a master who knows all languages, and you sweat while saying
+    the drink/food with the name written in a foreign language, right?
 --- !u!1 &1083916254
 GameObject:
   m_ObjectHideFlags: 0
@@ -23773,6 +23907,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
   m_PrefabInstance: {fileID: 1164169757}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1164169761
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134397310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7683266647293136700, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
 --- !u!1001 &1167941729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28075,6 +28223,25 @@ Transform:
   m_Father: {fileID: 1561111203}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1381581744 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 39e9f3ac5ecc88541a70c1edac45cff8, type: 3}
+  m_PrefabInstance: {fileID: 319039482}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1381581747
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381581744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5319838960549624506, guid: 39e9f3ac5ecc88541a70c1edac45cff8, type: 3}
 --- !u!1001 &1383971378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29169,6 +29336,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
   m_PrefabInstance: {fileID: 1441661081}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1441661085
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588105078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7683266647293136700, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
 --- !u!1001 &1442566590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30355,7 +30536,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MissionContent: {fileID: 1004748047537311887}
   MissionText: {fileID: 1004748047537311886}
-  Message: This is a test message for any mission.
+  Message: It is a problem to explain the problem literally, it is another problem
+    to understand and apply what the person on the other side says during the solution
+    phase, another problem is to express it more than 2 times if the problem is not
+    solved. In short, this is a huge problem.
 --- !u!1 &1517612157
 GameObject:
   m_ObjectHideFlags: 0
@@ -34155,6 +34339,25 @@ Transform:
   m_Father: {fileID: 2010273029}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1711017107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
+  m_PrefabInstance: {fileID: 198828633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1711017110
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711017107}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7683266647293136700, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
 --- !u!1001 &1720247330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35798,8 +36001,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759298673}
   m_LocalRotation: {x: -0, y: 0.99999905, z: -0, w: 0.0013918692}
-  m_LocalPosition: {x: 2.0981798, y: -16.15, z: 65.44}
-  m_LocalScale: {x: 8.7545185, y: 1.3, z: 1.0857986}
+  m_LocalPosition: {x: 2.0981798, y: -16.15, z: 65.81}
+  m_LocalScale: {x: 8.7545185, y: 1.3, z: 1.759211}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1378147938}
@@ -38385,7 +38588,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MissionContent: {fileID: 1004748047537311887}
   MissionText: {fileID: 1004748047537311886}
-  Message: This is a test message for any mission.
+  Message: Sometimes we can even go to a store just to walk around, try on clothes
+    but not buy them. At this point, employees look at us as if we are monsters,
+    and they come and ask "How can I help you".. YOU CAN'T! get out of my head
+--- !u!1 &1871254388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 39e9f3ac5ecc88541a70c1edac45cff8, type: 3}
+  m_PrefabInstance: {fileID: 358908727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1871254391
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871254388}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5319838960549624506, guid: 39e9f3ac5ecc88541a70c1edac45cff8, type: 3}
 --- !u!4 &1874273474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7324705577624711914, guid: 9eb847ab97b24024588682c8601254cf, type: 3}
@@ -39144,6 +39368,25 @@ Transform:
   m_Father: {fileID: 1446843153}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1886936563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
+  m_PrefabInstance: {fileID: 1306886559}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1886936566
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886936563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7683266647293136700, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
 --- !u!1001 &1887632308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39703,7 +39946,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Go to school
+  m_text: Go to School
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: b0ba0173de8100d4ebc6f193de6de85e, type: 2}
@@ -41359,6 +41602,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
   m_PrefabInstance: {fileID: 1975224585}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1975224589
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339053540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7683266647293136700, guid: ef4a0d827f1aa5e4e86cca6e047e6a1e, type: 3}
 --- !u!1001 &1980035263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44873,7 +45130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034893998103989758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.41, y: 2.34, z: -6.56}
+  m_LocalPosition: {x: -37.41, y: 2.84, z: 121.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45562,6 +45819,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Info
       objectReference: {fileID: 0}
+    - target: {fileID: 1004748047327377490, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: Message
+      value: NOT TO BE LOVED, BE DISMISSED. Humans are terrible creatures, it's a
+        headache to think about everything your loved ones say, every word you say
+        to them for 3 days. Shall we never leave the house?
+      objectReference: {fileID: 0}
     - target: {fileID: 1004748047327377491, guid: f9be848473414ec478f6529432b64bf3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -45584,7 +45847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1004748047327377491, guid: f9be848473414ec478f6529432b64bf3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -49.964783
+      value: -49.96475
       objectReference: {fileID: 0}
     - target: {fileID: 1004748047382873120, guid: f9be848473414ec478f6529432b64bf3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -45597,6 +45860,14 @@ PrefabInstance:
     - target: {fileID: 1004748047956038042, guid: f9be848473414ec478f6529432b64bf3, type: 3}
       propertyPath: m_fontSize
       value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748047963059329, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748047963059334, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1004748048309369029, guid: f9be848473414ec478f6529432b64bf3, type: 3}
       propertyPath: m_SizeDelta.x
@@ -45616,6 +45887,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1004748048596292009, guid: f9be848473414ec478f6529432b64bf3, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748049085055677, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748049085055677, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748049085055677, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748049085055677, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004748049085055677, guid: f9be848473414ec478f6529432b64bf3, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -47053,7 +47344,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7815113797246294043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.98, y: -16.67, z: 30.16}
+  m_LocalPosition: {x: 5.9, y: -15.9, z: -109.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -48345,7 +48636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3435643925735988777}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.21, y: 3.7150002, z: -10.559999}
+  m_LocalPosition: {x: -37.21, y: 4.215, z: 117.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -50973,7 +51264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5706085507777099004}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.21, y: 3.7150002, z: -10.559999}
+  m_LocalPosition: {x: -37.21, y: 4.215, z: 117.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
